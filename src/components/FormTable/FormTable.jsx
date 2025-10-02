@@ -1,8 +1,10 @@
 import React from 'react';
+import Container from '../Container/Container';
 
 const FormTable = ({user}) => {
     return (
-        <div >
+        <Container>
+            <div className='w-[50%] mx-auto'>
             <table className="border-separate" style={{ borderSpacing: '0 10px' }}>
                 <thead >
                     <tr >
@@ -20,6 +22,8 @@ const FormTable = ({user}) => {
                 </tbody>
             </table>
         </div>
+        </Container>
+
     );
 };
 

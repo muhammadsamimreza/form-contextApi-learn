@@ -1,4 +1,5 @@
 import React from "react";
+import Container from "../Container/Container";
 
 const Form = ({handelProduct}) => {
   const handleForm = (e) => {
@@ -14,7 +15,8 @@ const Form = ({handelProduct}) => {
     handelProduct(newUser)
   };
   return (
-    <div className="w-[50%] mx-auto mt-10">
+   <Container>
+       <div className="w-[50%] mx-auto mt-10">
       <form
         onSubmit={handleForm}
         className="border-2 border-teal-500 rounded-xl p-5"
@@ -41,6 +43,7 @@ const Form = ({handelProduct}) => {
         </button>
       </form>
     </div>
+   </Container>
   );
 };
 
